@@ -1,0 +1,18 @@
+import random
+
+# Print a welcome message
+print("Welcome to the Dice Rolling Simulator!\n")
+
+# Loop until the user chooses to quit
+while True:
+    # Prompt the user to roll the dice
+    input("Press Enter to roll the dice, or type 'quit' to exit.\n")
+    
+    # If the user chooses to quit, break out of the loop
+    if input.lower() == "quit":
+        print("Goodbye!")
+        break
+        
+    # Otherwise, generate a random number between 1 and 6 and print the result
+    number = random.randint(1, 6)
+    print(f"You rolled a {number}!\n")
